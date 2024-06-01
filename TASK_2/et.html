@@ -1,111 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for HTML5 for Linux version 5.6.0">
-  <meta charset="UTF-8">
-  <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0">
-  <title>Email Template</title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pazet.io</title>
+    <style>
         body {
-                            font-family: Arial, sans-serif;
-                                        margin: 0;
-                                                    padding: 0;
-                                                                background-color: #f4f4f4;
-                                                                        }
-                .container {
-                                    width: 100%;
-                                                max-width: 600px;
-                                                            margin: 0 auto;
-                                                                        background-color: #ffffff;
-                                                                                    padding: 20px;
-                                                                                                border-radius: 10px;
-                                                                                                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                                                                                                                    }
-                        .header {
-                                            text-align: center;
-                                                        padding: 10px 0;
-                                                                    background-color: #007BFF;
-                                                                                color: white;
-                                                                                            border-radius: 10px 10px 0 0;
-                                                                                                    }
-                                .header h1 {
-                                                    margin: 0;
-                                                                font-size: 24px;
-                                                                        }
-                                        .content {
-                                                            padding: 20px;
-                                                                        color: #333333;
-                                                                                }
-                                                .content h2 {
-                                                                    color: #007BFF;
-                                                                                font-size: 20px;
-                                                                                        }
-                                                        .content p {
-                                                                            font-size: 16px;
-                                                                                        line-height: 1.6;
-                                                                                                }
-                                                                .cta {
-                                                                                    text-align: center;
-                                                                                                margin: 20px 0;
-                                                                                                        }
-                                                                        .cta a {
-                                                                                            background-color: #28a745;
-                                                                                                        color: white;
-                                                                                                                    padding: 10px 20px;
-                                                                                                                                text-decoration: none;
-                                                                                                                                            border-radius: 5px;
-                                                                                                                                                        font-size: 16px;
-                                                                                                                                                                }
-                                                                                .footer {
-                                                                                                    text-align: center;
-                                                                                                                font-size: 14px;
-                                                                                                                            color: #777777;
-                                                                                                                                        padding: 10px 0;
-                                                                                                                                                }
-                                                                                        @media only screen and (max-width: 600px) {
-                                                                                                            .container {
-                                                                                                                                    padding: 10px;
-                                                                                                                                                }
-                                                                                                                        .header h1, .content h2 {
-                                                                                                                                                font-size: 18px;
-                                                                                                                                                            }
-                                                                                                                                    .content p, .cta a {
-                                                                                                                                                            font-size: 14px;
-                                                                                                                                                                        }
-                                                                                                                                            }
-  </style>
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .email-header img {
+            max-width: 100px;
+        }
+        .email-content {
+            padding: 20px 0;
+        }
+        .email-content h1 {
+            font-size: 24px;
+            color: #333333;
+        }
+        .email-content p {
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.5;
+        }
+        .email-footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #dddddd;
+            font-size: 12px;
+            color: #999999;
+        }
+        .email-footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Email Template</h1>
+    <div class="email-container">
+        <div class="email-header">
+            <img src="https://via.placeholder.com/100" alt="Pazet.io Logo">
+        </div>
+        <div class="email-content">
+            <h1>Welcome to Pazet.io, [User's Name]!</h1>
+            <p>Hi [User's Name],</p>
+            <p>Thank you for signing up for Pazet.io! We are thrilled to have you on board. Our app aims to [brief description of the app’s purpose or value proposition].</p>
+            <p>To get started, simply click the button below to log in and explore all the features we've built just for you.</p>
+            <a href="[Login URL]" class="button">Get Started</a>
+            <p>If you have any questions or need assistance, feel free to reply to this email or visit our <a href="[Help Center URL]">Help Center</a>.</p>
+            <p>Best regards,<br>The Pazet.io Team</p>
+        </div>
+        <div class="email-footer">
+            <p>&copy; [Current Year] Pazet.io. All rights reserved.</p>
+            <p>Pazet.io | [Company Address]</p>
+            <p><a href="[Unsubscribe URL]">Unsubscribe</a> from these emails.</p>
+        </div>
     </div>
-    <div class="content">
-      <h2>Welcome to Our Service</h2>
-      <p>An email template is a pre-designed email that can be used
-      to send out marketing or promotional emails. The goal of a
-      good email template is to make it easy and quick for
-      businesses to send out emails that look professional and
-      engaging.</p>
-      <div class="cta">
-        <a href="https://example.com">FOR DEMO CLICK HERE</a>
-      </div>
-      <p>Visually appealing: The email template should be visually
-      appealing and easy to read. The use of colors, fonts, and
-      images should be carefully considered to create a visually
-      appealing email.</p>
-      <p>Easy to use: The email template should be easy to use and
-      navigate. The user should be able to easily find the
-      necessary information and make changes to the template.</p>
-      <p>Responsive: The email template should be responsive, so
-      that it looks good on all devices, including desktop
-      computers, laptops, tablets, and smartphones.</p>
-    </div>
-    <div class="footer">
-      © 2024 Your Company. All rights reserved.
-    </div>
-  </div>
 </body>
 </html>
